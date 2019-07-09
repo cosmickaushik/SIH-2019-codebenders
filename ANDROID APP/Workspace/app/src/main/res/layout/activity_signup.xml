@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:orientation="vertical"
+    android:background="#FFFFE0"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGNUP"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#000000"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/employeeName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Name"
+        android:layout_marginBottom="15dp"
+        android:textSize="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/employeePost"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:hint="Enter EmailID"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/signupEmail"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:id="@+id/signupPassword"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="SignUp"
+        android:onClick="signupButtonClicked"
+        android:background="@drawable/editshape"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already a member?? Login here"
+        android:onClick="signinButtonClicked"
+        android:background="@null"
+        android:textAllCaps="false"
+        />
+
+
+</LinearLayout>
